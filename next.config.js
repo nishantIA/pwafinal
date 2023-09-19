@@ -6,7 +6,10 @@ const isDev = process.env.NODE_ENV !== "production";
 
 const withPWA = withPWAInit({
     // your other config...
-    exclude: [
+    dest:"public",
+    skipWaiting:true,
+    register:true,
+    buildExcludes: [
         // add buildExcludes here
         ({ asset, compilation }) => {
             if (
