@@ -9,22 +9,7 @@ const withPWA = withPWAInit({
     dest:"public",
     skipWaiting:true,
     register:true,
-    disable: isDev,
-    buildExcludes: [
-        // add buildExcludes here
-        ({ asset, compilation }) => {
-            if (
-                asset.name.startsWith("server/") ||
-                asset.name.match(/^((app-|^)build-manifest\.json|react-loadable-manifest\.json)$/)
-            ) {
-                return true;
-            }
-            if (isDev && !asset.name.startsWith("static/runtime/")) {
-                return true;
-            }
-            return false;
-        }
-    ],
+    buildExcludes: ["app-build-manifest.json"]
 });
 
 /** @type {import("next").NextConfig} */
