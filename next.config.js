@@ -9,6 +9,7 @@ const withPWA = withPWAInit({
     dest:"public",
     skipWaiting:true,
     register:true,
+    disable: isDev,
     buildExcludes: [
         // add buildExcludes here
         ({ asset, compilation }) => {
@@ -29,6 +30,9 @@ const withPWA = withPWAInit({
 /** @type {import("next").NextConfig} */
 const nextConfig = {
     // your other config...
+    experimental: {
+        appDir: true,             // <---- Comment and Uncomment this
+      },
     webpack(config) {
         const registerJs = path.join(path.dirname(require.resolve("next-pwa")), "register.js");
         const entry = config.entry;
