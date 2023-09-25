@@ -1,14 +1,14 @@
 {
-  "name": "IA Coworking",
-  "short_name": "IA Coworking",
-  "description": "IA Coworking",
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
-  "display": "standalone",
-  "orientation": "portrait",
-  "id": "/",
+  "theme_color": "#000000",
+  "background_color": "#e9c5a3",
+  "display": "fullscreen",
   "scope": "/",
   "start_url": "/",
+  "name": "IA Coworking",
+  "short_name": "IA Coworking",
+  "description": "IA Coworking, Coworking Space ",
+  "orientation": "portrait",
+  "id": "/",
   "icons": [
     {
       "src": "icons/icon-192x192.png",
@@ -29,7 +29,7 @@
       "src": "icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose":"any"
+      "purpose": "any"
     },
     {
       "src": "maskable.png",
