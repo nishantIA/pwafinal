@@ -10,7 +10,7 @@ export default function Pwa() {
 
   useEffect(() => {
     if (sw) {
-      sw.register("/sw.js", { scope: "/" }).then((registration) => {
+      sw.register("/service-worker.js", { scope: "/" }).then((registration) => {
         console.log("Service Worker registration successful with scope: ", registration.scope);
       }).catch((err) => {
         console.log("Service Worker registration failed: ", err);

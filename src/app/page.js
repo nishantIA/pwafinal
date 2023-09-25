@@ -1,5 +1,13 @@
 import Image from 'next/image'
 
+// useEffect(() => {
+//   if ('serviceWorker' in navigator) {
+//     navigator.serviceWorker
+//       .register('/service-worker.js')
+//       .then((registration) => console.log('scope is: ', registration.scope));
+//   }
+// }, []);
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
