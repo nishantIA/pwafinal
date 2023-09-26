@@ -4,9 +4,9 @@
   "display": "fullscreen",
   "scope": "/",
   "start_url": "/",
-  "name": "IA Coworking",
-  "short_name": "IA Coworking",
-  "description": "IA Coworking, Coworking Space ",
+  "name": "Next PWA",
+  "short_name": "Next PWA",
+  "description": "Next PWA",
   "orientation": "portrait",
   "id": "/",
   "icons": [
