@@ -12,5 +12,17 @@
         "36:B8:1A:62:89:12:75:D9:B7:19:A9:AB:B7:73:41:3D:7F:06:CF:24:56:3B:A7:AF:F8:25:DD:5A:B1:A7:75:A4"
       ]
     }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.get_login_creds",
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.use_as_origin"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.vercel.pwafinal.twa",
+      "sha256_cert_fingerprints": ["5A:BF:B7:50:1F:E2:B0:67:47:C0:47:FD:C7:BF:4C:6C:E9:28:87:69:C7:99:19:79:5F:3E:99:7F:22:E4:1A:B5"]
+    }
   }
 ]
